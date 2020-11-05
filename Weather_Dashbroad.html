@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, ie=edge, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, ie=edge, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <title>Weather Dashbroad</title>
-</head>
-    
-<body>
+  </head>
 
-  <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashbroad</span>
-    <!--Took me a long time to figure out how to center'Weather Dashbroad-->
-  </nav>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashbroad</span>
+      <!--Took me a long time to figure out how to center'Weather Dashbroad-->
+    </nav>
 
-  <div class="container">
-
-
-
-  </div>
-
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 bg-light">
+          <p class="search-bar">Search For A City</p>
+          <div
+            class="input"
+            type="text"
+            class="form-control"
+            aria-placeholder="Enter City Name"
+          >
+            <div class="input-group-append"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p id="temperature"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p id="humidity"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p id="wind-speed"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex">
+            <p id="UV-index"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h3>5-Day Forecast</h3>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
 </html>
