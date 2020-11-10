@@ -1,1 +1,75 @@
 # HW6-WeatherAPI
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+<!---->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+    <title>Weather Dashbroad</title>
+  </head>
+
+  <body>
+    <!--jQuery, AJAX, and Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+   <!--Re-Did the Nav bar --> 
+    <nav class="container-fluid">
+      <nav class="card">
+          <nav class="card-body text-center bg-dark text-white">
+              <h1>Weather Dashboard</h1>
+          </nav>
+      </nav>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+          <div class="col">
+              <div class="card-body text-center">
+                  <div class="card" style="width: 18rem">
+                      <div class="card-body bg-light">
+                          <h6 class="card-subtitle mb-2 text-muted"> PLease Enter City</h6>
+                            <!--I realized I didn't need the clear button-->
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control searchInput" placeholder="Enter City Name"
+                                  aria-label="Recipient's username" aria-describedby="button-addon2" />
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary bg-primary searchButton" type="button"
+                                      id="button-addon2">
+                                      <i class="fas fa-search"></i>
+                                  </button>
+                              </div>
+                          </div>
+                          <ul class="list-group"></ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col mt-4 mr-5">
+              <div class="card currentCard pb-2 pt-1">
+                  <h5 class="card-title mt-2 text-center">Current Forecast</h5>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col mt-4">
+                  <div class="card pb-5 fiveDayCard pl-5">
+                      <h5 class="card-title mt-2 mr-5">5-Day Forecast</h5>
+                      <div class="row">
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="weatherscript.js"></script>
+    <script src="luxon.js"></script>
+    <script>luxon.DateTime.local();</script>
+  <!--used Luxon instead of moment.js because apparently Moment will not be supported anymore-->
+  </body>
+</html>
